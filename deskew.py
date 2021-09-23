@@ -82,9 +82,10 @@ def hough_line_detection(image_edges):
 
 def get_angles(list_of_coordinates):
     '''
-    Input:
-    Output:
-    Description:
+    Input: list
+    Output: list
+    Description: The finction takes input list of list with each list containing coordinates of lines and returns 
+    list of angles of the lines
     '''
 
     return [math.degrees(math.atan2(y2 - y1, x2 - x1)) for [[x1, y1, x2, y2]] in list_of_coordinates]
@@ -103,7 +104,8 @@ def detect_horizontal_orientation(image_nd_array):
     '''
     Input: nd_array
     Output: float
-    Descriptiion: 
+    Descriptiion: The function takes input as the numpy array of the input image and returns the final angle in which the
+    image has to be rotated.
     '''
 
     final_angle = None
