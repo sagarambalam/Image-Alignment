@@ -28,7 +28,7 @@ If it is not aligned, we need to correct the alignment of the image.
 
 ## Exceptions:
 1. If input type is dir is provided, currently all the files will be processed. This can create issues for non image files.
-2. Current algorithm fails to get orientation correct if the angle is more than 90% or less than 0%.
+2. Current algorithm fails to get orientation correct if the angle is more than 180% or less than 0% with respect to horizontal axis.
 
 ## Usage:
 On Terminal:
