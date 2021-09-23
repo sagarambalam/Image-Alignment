@@ -29,11 +29,17 @@ If it is not aligned, we need to correct the alignment of the image.
 ## Installation instructions:
 1. On Cloning the repository, the following command will help install all the necessary packages
   - pip install -r requirements.txt
-2. We need to install tesseract into our system for OCR. The following steps have to be followed.
+2. We need to install tesseract into our system for OCR. Below are the steps to be followed.
   - On Linux:
     - apt-get install tesseract-ocr
   - On Mac:
     - brew install tesseract
+3. For installation of corpus of words required for horizontal orientation detection, below are the steps to be followed.
+  - open Terminal
+  - run python shell
+  - run the following commands:
+    - import nltk
+    - nltk.download('words')
 
 ## Exceptions:
 1. If input type is dir is provided, currently all the files will be processed. This can create issues for non image files.
