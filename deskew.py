@@ -32,6 +32,8 @@ def read_image(file_path):
 
 def write_image(input_path, output_path, output_nd_array):
     '''
+    Input: string, string, numpy array
+    Output: Numpy array written into the image at the output filepath
     '''
     file_name = input_path.split('/')[-1].split('.')[0]
     extension = input_path.split('.')[-1]
@@ -94,7 +96,7 @@ def get_angles(list_of_coordinates):
 def rotate_image(input_image, angle_of_rotation):
     '''
     Input: nd_array
-    Output: nd_array
+    Output: float
     Description: The function returns rotated image based on the angle given for rotation.
     '''
     return ndimage.rotate(input_image, angle_of_rotation)
