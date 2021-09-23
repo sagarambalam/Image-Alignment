@@ -38,8 +38,8 @@ If it is not aligned, we need to correct the alignment of the image.
   - open Terminal
   - run python shell
   - run the following commands:
-    `import nltk`
-    `nltk.download('words')`
+    - `import nltk`
+    - `nltk.download('words')`
 
 ## Exceptions:
 1. If input type is dir is provided, currently all the files will be processed. This can create issues for non image files.
