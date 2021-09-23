@@ -25,3 +25,11 @@ If it is not aligned, we need to correct the alignment of the image.
 3. Input can be either an image file or a directory.
 4. If the input is image file then image file will be processed and saved into the destination directory.
 5. If the input is a directory, then all the images in the directory will be processed and saved into the destination directory.
+
+## Exceptions:
+1. If input type is dir is provided, currently all the files will be processed. This can create issues for non image files.
+2. Current algorithm fails to get orientation correct if the angle is more than 90% or less than 0%.
+
+## Usage:
+On Terminal:
+python --input 'Your input path' --output 'Your output path' --input-type 'file or dir'
