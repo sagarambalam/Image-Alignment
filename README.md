@@ -26,6 +26,15 @@ If it is not aligned, we need to correct the alignment of the image.
 4. If the input is image file then image file will be processed and saved into the destination directory.
 5. If the input is a directory, then all the images in the directory will be processed and saved into the destination directory.
 
+## Installation instructions:
+1. On Cloning the repository, the following command will help install all the necessary packages
+  - pip install -r requirements.txt
+2. We need to install tesseract into our system for OCR. The following steps have to be followed.
+  - On Linux:
+    - apt-get install tesseract-ocr
+  - On Mac:
+    - brew install tesseract
+
 ## Exceptions:
 1. If input type is dir is provided, currently all the files will be processed. This can create issues for non image files.
 2. Current algorithm fails to get orientation correct if the angle is more than 180% or less than 0% with respect to horizontal axis.
